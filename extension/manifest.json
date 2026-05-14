@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Shopee Affiliate Crawler",
+  "version": "1.0",
+  "description": "Thu thap san pham Shopee cho Affiliate Marketing",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "https://shopee.vn/*",
+    "http://localhost:7979/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://shopee.vn/*"],
+      "js": ["interceptor.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://shopee.vn/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Shopee Crawler"
+  }
+}

@@ -1,0 +1,23 @@
+# IDE
+.idea/
+
+cookies.txt
+products.json
+products.csv
+products.xlsx
+products - Copy.xlsx
+test_crawl.json
+test_out.*
+crawl_debug.log
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Data folders
+Data_Excel/
+
+# Browser profiles (large, sensitive)
+affiliate_user_data/
+shopee_profile/
+shopee_profile_backup*/
+test_profile/

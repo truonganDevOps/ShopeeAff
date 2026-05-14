@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 270px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #fff;
+      padding: 16px;
+      color: #333;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .logo {
+      width: 28px; height: 28px;
+      background: #EE4D2D;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 16px;
+    }
+    h3 { font-size: 15px; color: #EE4D2D; }
+    .server-badge {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .ok  { background: #e8f5e9; color: #2e7d32; }
+    .err { background: #fce4ec; color: #c62828; }
+    .counter {
+      text-align: center;
+      margin: 6px 0 4px;
+    }
+    .counter .num { font-size: 36px; font-weight: 700; color: #EE4D2D; }
+    .counter .lbl { font-size: 12px; color: #999; margin-top: 2px; }
+    .progress {
+      font-size: 12px;
+      text-align: center;
+      color: #EE4D2D;
+      font-weight: 600;
+      min-height: 18px;
+      margin: 4px 0 8px;
+    }
+    .result {
+      font-size: 12px;
+      text-align: center;
+      color: #555;
+      min-height: 18px;
+      margin-bottom: 10px;
+    }
+    .mode-row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .mode-btn {
+      flex: 1;
+      padding: 7px 4px;
+      border: 2px solid #ddd;
+      border-radius: 7px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      background: #f9f9f9;
+      color: #666;
+      transition: all .15s;
+    }
+    .mode-btn.active {
+      border-color: #EE4D2D;
+      background: #fff5f3;
+      color: #EE4D2D;
+    }
+    button {
+      width: 100%; padding: 10px;
+      border: none; border-radius: 8px;
+      font-size: 14px; font-weight: 600;
+      cursor: pointer; transition: opacity .15s;
+    }
+    button:hover { opacity: .88; }
+    .btn-start { background: #EE4D2D; color: #fff; }
+    .btn-stop  { background: #424242; color: #fff; }
+    .hint {
+      font-size: 11px; color: #aaa;
+      margin-top: 12px; line-height: 1.6;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">S</div>
+    <h3>Shopee Crawler</h3>
+  </div>
+
+  <div class="server-badge err" id="server-badge">⚠ Server chưa chạy</div>
+
+  <div class="counter">
+    <div class="num" id="count">0</div>
+    <div class="lbl">sản phẩm đã thu thập</div>
+  </div>
+
+  <div class="progress" id="progress"></div>
+  <div class="result"   id="result"></div>
+
+  <div class="mode-row">
+    <button class="mode-btn active" id="btn-fast" onclick="setMode('fast')">
+      ⚡ Nhanh<br><span style="font-weight:400;font-size:11px">~2s/trang</span>
+    </button>
+    <button class="mode-btn" id="btn-scroll" onclick="setMode('scroll')">
+      🖱 Scroll<br><span style="font-weight:400;font-size:11px">chắc hơn</span>
+    </button>
+  </div>
+
+  <button class="btn-start" id="btn-start">▶ Bắt đầu tất cả danh mục</button>
+  <button class="btn-stop"  id="btn-stop" style="display:none">⏹ Dừng &amp; Export</button>
+
+  <div class="hint" id="hint">
+    Nhấn Bắt đầu — extension tự động crawl<br>tất cả danh mục trong config.json.
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

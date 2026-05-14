@@ -1,0 +1,133 @@
+{
+  "categories": [
+    {
+      "name": "Balo & Túi Ví Nam",
+      "url": "https://shopee.vn/Balo-Túi-Ví-Nam-cat.11035741"
+    },
+    {
+      "name": "Bách Hóa Online",
+      "url": "https://shopee.vn/Bách-Hóa-Online-cat.11036525"
+    },
+    {
+      "name": "Chăm Sóc Thú Cưng",
+      "url": "https://shopee.vn/Chăm-Sóc-Thú-Cưng-cat.11036478"
+    },
+    {
+      "name": "Dụng cụ và thiết bị tiện ích",
+      "url": "https://shopee.vn/Dụng-cụ-và-thiết-bị-tiện-ích-cat.11116484"
+    },
+    {
+      "name": "Giày Dép Nam",
+      "url": "https://shopee.vn/Giày-Dép-Nam-cat.11035801"
+    },
+    {
+      "name": "Giày Dép Nữ",
+      "url": "https://shopee.vn/Giày-Dép-Nữ-cat.11035825"
+    },
+    {
+      "name": "Giặt Giũ & Chăm Sóc Nhà Cửa",
+      "url": "https://shopee.vn/Giặt-Giũ-Chăm-Sóc-Nhà-Cửa-cat.11036624"
+    },
+    {
+      "name": "Máy Tính & Laptop",
+      "url": "https://shopee.vn/Máy-Tính-Laptop-cat.11035954"
+    },
+    {
+      "name": "Máy Ảnh & Máy Quay Phim",
+      "url": "https://shopee.vn/Máy-Ảnh-Máy-Quay-Phim-cat.11036101"
+    },
+    {
+      "name": "Mẹ & Bé",
+      "url": "https://shopee.vn/Mẹ-Bé-cat.11036194"
+    },
+    {
+      "name": "Nhà Cửa & Đời Sống",
+      "url": "https://shopee.vn/Nhà-Cửa-Đời-Sống-cat.11036670"
+    },
+    {
+      "name": "Nhà Sách Online",
+      "url": "https://shopee.vn/Nhà-Sách-Online-cat.11036863"
+    },
+    {
+      "name": "Phụ Kiện & Trang Sức Nữ",
+      "url": "https://shopee.vn/Phụ-Kiện-Trang-Sức-Nữ-cat.11035853"
+    },
+    {
+      "name": "Sắc Đẹp",
+      "url": "https://shopee.vn/Sắc-Đẹp-cat.11036279"
+    },
+    {
+      "name": "Sức Khỏe",
+      "url": "https://shopee.vn/Sức-Khỏe-cat.11036345"
+    },
+    {
+      "name": "Thiết Bị Điện Gia Dụng",
+      "url": "https://shopee.vn/Thiết-Bị-Điện-Gia-Dụng-cat.11036971"
+    },
+    {
+      "name": "Thiết Bị Điện Tử",
+      "url": "https://shopee.vn/Thiết-Bị-Điện-Tử-cat.11036132"
+    },
+    {
+      "name": "Thể Thao & Du Lịch",
+      "url": "https://shopee.vn/Thể-Thao-Du-Lịch-cat.11035478"
+    },
+    {
+      "name": "Thời Trang Nam",
+      "url": "https://shopee.vn/Thời-Trang-Nam-cat.11035567"
+    },
+    {
+      "name": "Thời Trang Nữ",
+      "url": "https://shopee.vn/Thời-Trang-Nữ-cat.11035639"
+    },
+    {
+      "name": "Thời Trang Trẻ Em",
+      "url": "https://shopee.vn/Thời-Trang-Trẻ-Em-cat.11036382"
+    },
+    {
+      "name": "Túi Ví Nữ",
+      "url": "https://shopee.vn/Túi-Ví-Nữ-cat.11035761"
+    },
+    {
+      "name": "Voucher & Dịch Vụ",
+      "url": "https://shopee.vn/Voucher-Dịch-Vụ-cat.11035898"
+    },
+    {
+      "name": "Ô Tô & Xe Máy & Xe Đạp",
+      "url": "https://shopee.vn/Ô-Tô-Xe-Máy-Xe-Đạp-cat.11036793"
+    },
+    {
+      "name": "Điện Thoại & Phụ Kiện",
+      "url": "https://shopee.vn/Điện-Thoại-Phụ-Kiện-cat.11036030"
+    },
+    {
+      "name": "Đồ Chơi",
+      "url": "https://shopee.vn/Đồ-Chơi-cat.11036932"
+    },
+    {
+      "name": "Đồng Hồ",
+      "url": "https://shopee.vn/Đồng-Hồ-cat.11035788"
+    }
+  ],
+  "scoring": {
+    "min_sold": 50,
+    "min_rating": 3.8,
+    "min_price": 0,
+    "max_price": 0,
+    "top_n_per_category": 5,
+    "top_n_overall": 10
+  },
+  "crawl": {
+    "limit_per_category": 50,
+    "headless": false,
+    "manual_bypass": true,
+    "max_scrolls": 30,
+    "scroll_pause": 1.5,
+    "timeout_ms": 60000
+  },
+  "export": {
+    "json": "products.json",
+    "csv": "products.csv",
+    "excel": "products.xlsx"
+  }
+}
